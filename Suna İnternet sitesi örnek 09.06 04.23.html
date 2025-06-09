@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suna Dinçer - Kariyer Sayfası</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            position: relative; /* Bu eklendi */
+            min-height: 100vh; /* Sayfa yüksekliği ayarı */
+        }
+
+         /* Sabit Fotoğraf Stili */
+        #profile-photo {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            width: 240px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #967c9d89;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        /* Sağ alt köşe fotoğraf stili (sayfa ile hareket eden) */
+        #corner-photo {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 240px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #967c9d89;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        header {
+            background: #5e1d79;
+            color: rgb(209, 204, 226);
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            padding-bottom: 180px; /* Footer ve fotoğraf için boşluk */
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            position: relative;
+        }
+        ul.custom-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ol.custom-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        /* Aktif menü öğesi için yeni stil */
+        nav a.active {
+            background-color: #5e1d79;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        /* Fare üzerine gelindiğinde efekti */
+        nav a:hover {
+            background-color: #967c9d;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+     <!-- Sabit Profil Fotoğrafı -->
+    <img id="profile-photo" src="Suna kontrabass Foto.jpg" alt="Suna Dinçer">
+    
+    <!-- Tüm içerik için bir container -->
+    <div style="position: relative;">
+        <!-- Sağ alt köşe fotoğrafı -->
+        <img id="corner-photo" src="LOGO.png" alt="Suna Dinçer">
+
+        <header>
+            <h1>Suna Dinçer</h1>
+            <p>Müzisyen, Sanatçı</p>
+        </header>
+        
+        <nav>
+            <a href="#about">Hakkında</a>
+            <a href="#experience">Deneyim</a>
+            <a href="#projects">Projeler</a>
+            <a href="#contact">İletişim</a>
+        </nav>
+        
+        <section id="about">
+            <h2>Hakkında</h2>
+            <p>linda Suna Dinçer, 1996'da Sofya / Bulgaristan'da doğdu ve Ankara'da büyüdü. 5 yaşında caz şarkıcısı olan annesi Yıldız İbrahimova ile şarkı söylemeye başlayan ve "Çocuk Şarkıları" adlı bir albüm kaydeden Suna, Türkiye'de 20'den fazla konser verdi ve ardından 6 yaşında piyano çalmaya başladı.
+
+                12 yaşında Bilkent Üniversitesi Müzik ve Sanat İlk ve Ortaokuluna kabul edilen Suna, o sırada kontrbas hocası Sergei Margulis ile çalıştı. Lise yıllarımda Bilkent Gençlik Senfoni Orkestrası'nda, birkaç oda orkestrası katılımında solo konserde yer aldı. 2015 yılında mezun olduktan sonra 4 yıl Başkent Üniversitesi Devlet Konservatuarı'nda burslu okudu ve bu süreçte çok sevgili kontrbas öğretmeni Özlem Er Civelek ile çalıştı. Başkent Oda Orkestrası, Başkent Uluslararası Oda Amatör Orkestrası ve Ted Üniversitesi Orkestrası'nda yer aldı. Solo ve grup içerisinde birçok konsere katıldı. Lisans Derecesini aldıktan sonra, David Heyes, Enrico Fagone, Margarita Kalcheva, Thomas Martin ve Roman Patkolo'nun master classlarına katıldı.
+                
+                Suna, yüksek lisans için 2019 yılında Yeni Bulgar Üniversitesi'ne kabul edildi ve Mario Hossen tarafından yönetilen orkestranın bir parçası oldu. Geçen yıl pandemide Yeni Bulgar Üniversitesi'nde kontrbas yüksek lisans programını bitirdi. Şimdi Thomas Martin ile çalışmak üzere Royal Birmingham Conservatoire'da tam burslu olarak yüksek lisans yapmak için İngiltere'de bulunuyor.
+                
+                Suna da kontrbas alanında "gizli hazinelerimizden" biri ve gerek kendisini gerekse Türkiye'yi yurtdışında müthiş bir şekilde temsil eden bir müzik elçimiz. Yetişmesinde ailesinin ve öğretmenlerinin, özellikle de Özlem Er Civelek'in büyük emeği var.</p>
+        </section>
+        
+        <section id="experience">
+            <h2>Deneyim</h2>
+              <ol class="custom-list">
+                <li>
+                    <strong>Çaldığı Orkestra</strong>
+                    <ul class="custom-list">
+                        <li>Agora</li>
+                        <li>Başkent Oda Orkestrası</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Katıldığı MasterClass</strong>
+                    <ul class="custom-list">
+                        <li> Enrico Fagone</li>
+                        <li>Margarita Kalcheva</li>
+                        <li>Thomas Martin</li>
+                        <li> Roman Patkolo</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        
+        <section id="projects">
+            <h2>Projeler</h2>
+            <ol class="custom-list">
+                <li>
+                    <strong>Ya Sonra Projesi</strong>
+                    <ul class="custom-list">
+                        <li>Bestecilik</li>
+                        <li>icra</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Etkinlikler</strong>
+                    <ul class="custom-list">
+                        <li>MAD Sanat Akademisi ve Anadolu Çağdaş Sanatlar Derneği destekleriyle düzenlenen "Thomas Martin MasterClass ve Öğrenci konseri 17-23 mayıs 2025"</li>
+                    </ul>
+                </li>
+            </ol>
+            <p></p>
+        </section>
+        
+        <section id="contact">
+            <h2>İletişim</h2>
+            <p>Email: alindasuna1996@gmail.com</p>
+        </section>
+        
+        <footer>
+            &copy; 2025 Berkan Başaran. Tüm hakları saklıdır.
+        </footer>
+    </div>
+
+    <script>
+        // Sayfa yüklendiğinde çalışacak fonksiyon
+        document.addEventListener('DOMContentLoaded', function() {
+            // URL'deki hash (sayfa içi bağlantı) bilgisini al
+            const currentHash = window.location.hash;
+            
+            // Tüm menü linklerini seç
+            const navLinks = document.querySelectorAll('nav a');
+            
+            // Her bir link için kontrol yap
+            navLinks.forEach(link => {
+                // Linkin href özelliği ile şu anki hash'i karşılaştır
+                if (link.getAttribute('href') === currentHash) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Sayfa içi bağlantı tıklamalarını dinle
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Tüm aktif sınıflarını kaldır
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    // Tıklanan öğeye aktif sınıfını ekle
+                    this.classList.add('active');
+                });
+            });
+        });
+        
+        // Sayfa kaydırıldığında hangi bölümde olduğumuzu tespit et
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
